@@ -1,0 +1,26 @@
+package br.com.erudio;
+
+public class Greeting {
+    private final long id;
+    private final String content;
+
+    public Greeting(long id, String content) {
+        this.id = id;
+        this.content = content;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    // Método main pode ser removido, a menos que você tenha uma razão específica para mantê-lo
+    public static void main(String[] args) {
+        // Exemplo de uso
+        Greeting greeting = new Greeting(1, "Olá, Mundo!");
+        System.out.println(greeting.getContent());
+    }
+}
